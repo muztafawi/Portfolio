@@ -13,15 +13,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Overview />
       <Routes>
-        <Route path='/' element={<Main />}>
-          <Route path='/portfolio' element={<Portfolio />} />
+        <Route path="/" element={<Main />}>
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route index element={<About />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/blog' element={<Blog />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
       <Sidebar />
