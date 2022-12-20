@@ -1,30 +1,25 @@
 /** @format */
 
-import { Routes, Route } from 'react-router-dom';
-import Overview from './Pages/Overview';
-import Main from './Pages/Main';
-import About from './Pages/About';
-import Portfolio from './Pages/Portfolio';
-import Blog from './Pages/Blog';
-import Contact from './Pages/Contact';
-import Sidebar from './Pages/Sidebar';
-
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Profile from './Components/Profile';
+import Filter from './Components/Filter';
+import Projects from './Components/Projects';
+import Skills from './Components/Skills';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Overview />
+      <Profile />
+      <Filter />
+
       <Routes>
-        <Route path="/" element={<Main />}>
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route index element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
+        <Route path="/" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
-      <Sidebar />
+
+      <Footer />
     </div>
   );
 }
