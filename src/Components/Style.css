@@ -15,17 +15,17 @@
       Teal: hsl(174, 63%, 62%)
   */
 
-  --hue: 207;
-  --sat: 90%;
-  --lig: 61%;
+  --hue: 42;
+  --sat: 95%;
+  --lig: 47%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
-  --title-color: hsl(var(--hue), 12%, 15%);
-  --text-color: hsl(var(--hue), 12%, 45%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 67%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
-  --body-color: hsl(var(--hue), 100%, 99%);
-  --container-color: #fff;
+  --body-color: hsl(var(--hue), 2%, 2%);
+  --container-color: hsl(var(--hue), 6%, 10%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -240,19 +240,19 @@ img {
 }
 
 .button__gray {
-  background-color: var(--text-color-lighten);
+  background-color: var(--container-color);
   color: var(--title-color);
 }
 
 .button__gray:hover {
-  background-color: var(--text-color-light);
+  background-color: hsl(var(--hue), 4%, 18%);
 }
 
 /*=============== FILTERS TABS ===============*/
 
 .filters__content {
   margin: 2rem 0 2.5rem;
-  background-color: var(--text-color-lighten);
+  background-color: var(--container-color);
   padding: 0.375rem;
   border-radius: 0.75rem;
   display: flex;
@@ -277,6 +277,10 @@ img {
 
 .Btn {
   width: 100%;
+}
+
+.Btn:active {
+  background-color: var(--body-color);
 }
 
 .filters__button:hover {
@@ -499,11 +503,11 @@ img {
   }
 
   .profile__info-description {
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
   }
 
   .profile__buttons {
-    column-gap: 2rem;
+    column-gap: 1.5rem;
   }
 
   .projects__content {
