@@ -48,7 +48,7 @@ function Skills() {
                   <div className="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
-                      <h3 className="skills__name">Bootstrap </h3>
+                      <h3 className="skills__name">Tailwind CSS </h3>
                       <span className="skills__level">Intermediate</span>
                     </div>
                   </div>
@@ -114,7 +114,7 @@ function Skills() {
                   <div className="skills__data">
                     <i class="ri-checkbox-circle-line"></i>
                     <div>
-                      <h3 className="skills__name">Git</h3>
+                      <h3 className="skills__name">MongoDB</h3>
                       <span className="skills__level">Intermediate</span>
                     </div>
                   </div>
